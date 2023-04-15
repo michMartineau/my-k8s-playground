@@ -54,3 +54,5 @@ resource "aws_security_group_rule" "eks_nodegroup_ingress_node_https" {
   type                     = "ingress"
 }
 
+
+
