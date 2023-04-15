@@ -32,7 +32,7 @@ resource "aws_route_table" "eks_rt" {
   }
 }
 
-resource "aws_route_table_association" "eks-rta" {
+resource "aws_route_table_association" "eks_rta" {
   count = 2
   subnet_id      = aws_subnet.eks_subnet[count.index].id
   route_table_id = aws_route_table.eks_rt.id
