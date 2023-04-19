@@ -1,2 +1,2 @@
 # my-k8s-playground
-WORK IN PROGRESS
+`terraform plan -var "github_token=${GITHUB_TOKEN}"`

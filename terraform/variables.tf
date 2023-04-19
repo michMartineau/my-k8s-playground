@@ -11,3 +11,29 @@ variable "node_group" {
   default = "eks_node_group"
   type = string
 }
+
+variable "flux_target_path" {
+  default = "cluster"
+  type = string
+}
+
+variable "github_owner" {
+  default = "michMartineau"
+  type = string
+}
+
+variable "github_repository" {
+  default = "my-k8s-playground"
+  type = string
+}
+
+variable "branch" {
+  default = "main"
+  type = string
+}
+
+variable "github_token" {
+  sensitive = true
+  type = string
+}
+
