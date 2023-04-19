@@ -1,6 +1,3 @@
-
-
-
 resource "aws_eks_node_group" "eks_nodegroup" {
   cluster_name    = aws_eks_cluster.eks_cluster.name
   node_group_name = var.node_group
@@ -20,8 +17,6 @@ resource "aws_eks_node_group" "eks_nodegroup" {
     aws_iam_role_policy_attachment.eks_nodegroup_AmazonEC2ContainerRegistryReadOnly,
   ]
 }
-
-
 
 resource "aws_eks_cluster" "eks_cluster" {
   name     = var.cluster_name
